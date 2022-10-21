@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Tailwind</title>
+</head>
+<body class="font-nunito">
+    <!-- intro section -->
+    <div class="h-screen lg:h-screen relative">
+        <!-- narbar -->
+        <nav class="w-full fixed z-10 top-0 bg-red-300">
+            <div class="container mx-auto py-2 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <img class="w-8 h-8 rounded-full" src="./img/xantoz.png" alt="">
+                    <span class="text-lg font-bold text-red-900">Xantoz</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm">
+                    <li class="hover:text-blue-700"><a href="#">HOME</a></li>
+                    <li class="hover:text-blue-700"><a href="">ABOUT US</a></li>
+                    <li class="hover:text-blue-700"><a href="">SERVICES</a></li>
+                    <li class="hover:text-blue-700"><a href="">TESTIMONIAL</a></li>
+                    <li class="hover:text-blue-700"><a href="">CONTACT</a></li>
+                </ul>
+                <span class="bg-red-800 text-white px-2 py-1 font-medium hidden cursor-pointer md:block">Visit Us</span>
+                <div id="hamburger" class="space-y-1 cursor-pointer md:hidden relative z-20">
+                    <div class="w-5 h-0.5 bg-black"></div>
+                    <div class="w-5 h-0.5 bg-black"></div>
+                    <div class="w-5 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="bg-red-800 absolute left-40 top-0 w-1/2 text-center align-middle rounded-b-2xl text-white space-y-2 font-medium hidden">
+                    <li class=><a href="#">HOME</a></li>
+                    <li class=><a href="#">ABOUT US</a></li>
+                    <li class=><a href="#">SERVICES</a></li>
+                    <li class=><a href="#">TESTIMONIAL</a></li>
+                    <li class=><a href="#">CONTACT</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <!-- intro content -->
+        <!-- div with image -->
+        <div class="bg-black">
+            <div class="bg-perfect-suit w-screen h-screen bg-cover bg-no-repeat bg-center absolute brightness-50">
+                <div>
+                    <div class=" p-1.5 sm:p-5 md:p-9">
+                        <h1 class=" text-yellow-500 pt-32 font-extrabold text-3xl sm:pt-36 md:text-4xl w-1/2">We make Outfits that Suit you</h1>
+                        <p class=" text-white mt-4 md:w-80 lg:w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique autem incidunt ex nulla magnam cupiditate vero atque corrupti perferendis, totam quia consequuntur. Laudantium fuga tempore esse ducimus, eaque autem maxime.</p>
+                        <button class="mt-5 text-white text-xs bg-green-800 py-2.5 px-2 rounded-lg shadow-xl">Our Services</button>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                
+            
+            <!-- animated text -->
+            <!-- texts -->
+
+            <div></div>
+        </div>
+        </div>
+        
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
