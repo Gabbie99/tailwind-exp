@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/output.css">
-    <title>Tailwind</title>
+    <title>Portfolio</title>
 </head>
-<body class="font-nunito">
+<body class="font-bioRhyme">
     <!-- intro section -->
-    <div class="h-screen lg:h-screen relative">
+    <section id="#">
+        <div class="h-screen lg:h-screen relative">
         <!-- narbar -->
-        <nav class="w-full fixed z-10 top-0 bg-red-300">
-            <div class="container mx-auto py-2 flex justify-between items-center">
+        <nav class="w-full fixed z-10 top-0 bg-white shadow-md">
+            <div class="container mx-auto py-2 flex justify-between items-center md:items-center justify-between">
                 <div class="flex items-center gap-2">
                     <img class="w-8 h-8 rounded-full" src="./img/xantoz.png" alt="">
-                    <span class="text-lg font-bold text-red-900">Xantoz</span>
+                    <span class="text-lg font-bold text-yellow-600">Xantoz</span>
                 </div>
-                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm">
+                <ul class="hidden md:flex space-x-10 text-yellow-600 font-bold text-sm">
                     <li class="hover:text-blue-700"><a href="#">HOME</a></li>
-                    <li class="hover:text-blue-700"><a href="">ABOUT US</a></li>
+                    <li class="hover:text-blue-700"><a href="#about-us">ABOUT US</a></li>
                     <li class="hover:text-blue-700"><a href="">SERVICES</a></li>
                     <li class="hover:text-blue-700"><a href="">TESTIMONIAL</a></li>
                     <li class="hover:text-blue-700"><a href="">CONTACT</a></li>
                 </ul>
-                <span class="bg-red-800 text-white px-2 py-1 font-medium hidden cursor-pointer md:block">Visit Us</span>
+                <span class="bg-green-800 text-white px-2 py-1 font-medium hidden cursor-pointer md:block">Visit Us</span>
                 <div id="hamburger" class="space-y-1 cursor-pointer md:hidden relative z-20">
                     <div class="w-5 h-0.5 bg-black"></div>
                     <div class="w-5 h-0.5 bg-black"></div>
                     <div class="w-5 h-0.5 bg-black"></div>
                 </div>
-                <ul id="menu" class="bg-red-800 absolute left-40 top-0 w-1/2 text-center align-middle rounded-b-2xl text-white space-y-2 font-medium hidden">
-                    <li class=><a href="#">HOME</a></li>
-                    <li class=><a href="#">ABOUT US</a></li>
-                    <li class=><a href="#">SERVICES</a></li>
-                    <li class=><a href="#">TESTIMONIAL</a></li>
-                    <li class=><a href="#">CONTACT</a></li> 
+                <ul id="menu" class="bg-green-800 absolute left-40 top-0 w-1/2 text-center align-middle rounded-b-2xl text-white text-sm space-y-2 hidden font-thin">
+                    <li class=><a href="#">Home</a></li>
+                    <li class=><a href="#about-us">About Us</a></li>
+                    <li class=><a href="#">Services</a></li>
+                    <li class=><a href="#">Testimonial</a></li>
+                    <li class=><a href="#">Contact</a></li> 
                 </ul>
             </div>
         </nav>
         <!-- intro content -->
         <!-- div with image -->
-        <div class="bg-black">
-            <div class="bg-perfect-suit w-screen h-screen bg-cover bg-no-repeat bg-center absolute brightness-50">
-                <div>
-                    <div class=" p-1.5 sm:p-5 md:p-9">
-                        <h1 class=" text-yellow-500 pt-32 font-extrabold text-3xl sm:pt-36 md:text-4xl w-1/2">We make Outfits that Suit you</h1>
-                        <p class=" text-white mt-4 md:w-80 lg:w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique autem incidunt ex nulla magnam cupiditate vero atque corrupti perferendis, totam quia consequuntur. Laudantium fuga tempore esse ducimus, eaque autem maxime.</p>
-                        <button class="mt-5 text-white text-xs bg-green-800 py-2.5 px-2 rounded-lg shadow-xl">Our Services</button>
+            <div class=" bg-poster md:bg-mini lg:bg-mini bg-no-repeat bg-cover w-screen h-screen ">
+                <div class=" flex justify-around">
+                    <div class=" p-1.5 sm:p-5 md:p-9 brightness-10">
+                        <h1 class=" text-yellow-500 pt-32 font-extrabold text-2xl sm:pt-36 md:text-4xl w-1/2">We make Outfits that Suit you</h1>
+                        <p class=" text-white  mt-4 md:w-80 lg:w-96 text-sm text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique autem incidunt ex nulla magnam cupiditate vero atque corrupti perferendis, totam quia consequuntur. Laudantium fuga tempore esse ducimus, eaque autem maxime.</p>
+                        <button class="mt-5 text-white text-sm bg-green-800 py-2 px-2 rounded-lg shadow-xl ">Our Services</button>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                    <!-- <div>
+                        <img class="hidden md:block lg:block w-96 h-96 m-auto object-cover justify-between -scale-x-100 mt-32" src="./img/fashion-designer.webp" alt="">
+                    </div> -->
                 </div>
                 
             
@@ -61,11 +61,38 @@
             <!-- texts -->
 
             <div></div>
-        </div>
-        </div>
-        
-        
+        </div>           
     </div>
+    </section>
+
+    <!-- About -->
+    <section id="about-us">
+        <div class='all'>
+            <div class=' p-48 bg-gray-600'></div>
+            <div class='p-48 bg-gray-900'></div>
+            <div class='flexer'>
+                <div class='upper'>
+                    <h1>About Us</h1>
+                        <p>Our mission is what drives us to do everything possible to expand human potentials. We do that by creating groundbreaking and outstanding fashion innovations, by making our products more sustainable and accessible, by building creative and diverse team for the benefit of our communities at work and where we live. We extend and communicate our African cultural abilities globally through fashion.</p>
+                        <button></button>
+                </div>
+                <div class='lower'>
+                    <img src={Clip} alt="clip-art" />
+                </div>
+            </div>
+            <div class='ceo'>
+                <div class='meet'>
+                    <h1>Meet the CEO</h1>
+                    <p>Xantoz Group was founded by Engr. Christopher Idoko A. and is aimed at bringing diverse team with fashionable ideas together to protect and contribute devotedly to the world of fashion. Engr. Chris is a fashion designer with striking thoughts of making out of the world ideas to reality in no time! He's into real estate and also doing very well with structural designs playing out his potentials.</p>
+                </div>
+                <div class='boss'>
+                <img src={Boss} alt="boss" />
+                </div>
+            </div>
+    
+        </div>
+   </section>
+    
     <script src="./app.js"></script>
 </body>
 </html>
